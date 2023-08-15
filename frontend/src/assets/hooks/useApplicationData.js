@@ -41,7 +41,7 @@ const reducer = (state, action) => {
       return {...state, likedState};
     }
     if (state.likedState[action.value.id]) {
-      const likedState = { ...state.likePic };
+      const likedState = { ...state.likedState };
       delete likedState[action.value.id];
       return {...state, likedState};
     }
